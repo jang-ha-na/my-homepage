@@ -29,10 +29,7 @@
         <a href="login.html">로그인</a>
         <button id="darkBtn">🌙</button>
     </nav>
-     <section class="card visitor-card">
-    <h2>📊 방문자</h2>
-    <p>👤 <span id="visitor">0</span> 명</p>
-</section>
+     
 </header>
 
 <section class="hero" id="home">
@@ -220,17 +217,6 @@ localStorage.setItem("visitor", count);
 
 document.getElementById("visitor").innerText = count;
 </script>
-    <script>
-function updateClock() {
-    const now = new Date();
 
-    document.getElementById("clock").innerHTML =
-        now.toLocaleDateString("ko-KR") + "<br>" +
-        now.toLocaleTimeString("ko-KR");
-}
-
-setInterval(updateClock, 1000);
-updateClock();
-</script>
 </body>
 </html>
