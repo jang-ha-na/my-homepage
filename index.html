@@ -5,77 +5,100 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HANA PROFILE</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<link rel="stylesheet" href="style.css">
+</head>
 
-body{
-    font-family:Arial,sans-serif;
-    background:#f5f5f7;
-    color:#222;
-}
+<body>
 
-header{
-    background:#1f1f1f;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
+<header>
+    <div class="logo">HANA PROFILE</div>
 
-header h1{
-    font-size:42px;
-}
+    <nav>
+        <a href="#">홈</a>
+        <a href="#">자기소개</a>
+        <a href="#">프로젝트</a>
+        <a href="#">게시판</a>
+        <a href="#">문의하기</a>
+    </nav>
+</header>
 
-nav{
-    background:#333;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
-    padding:15px;
-}
+<section class="hero">
 
-nav a{
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-}
+    <img src="images/profile.jpg" class="profile">
 
-nav a:hover{
-    color:#4da3ff;
-}
+    <h1>안녕하세요! 👋</h1>
 
-.hero{
-    text-align:center;
-    padding:80px 20px;
-}
+    <h2>장하나입니다.</h2>
 
-.profile{
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    background:#d9d9d9;
-    margin:0 auto 30px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:70px;
-}
+    <p>전자공학 · 웹 개발 · 데이터 분석</p>
 
-.hero h1{
-    font-size:50px;
-    margin-bottom:20px;
-}
+    <button>게시판 바로가기</button>
 
-.hero h2{
-    font-size:30px;
-    margin-bottom:20px;
-}
+</section>
 
-.hero p{
-    font-size:22px;
-    margin
+<section class="card">
+
+<h2>📢 최근 글</h2>
+
+<ul>
+
+<li>HTML 공부 시작</li>
+
+<li>GitHub Pages 홈페이지 제작</li>
+
+<li>첫 홈페이지 완성</li>
+
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>💻 Skills</h2>
+
+<div class="skills">
+
+<div>HTML</div>
+
+<div>CSS</div>
+
+<div>JavaScript</div>
+
+<div>Python</div>
+
+<div>SQL</div>
+
+<div>GitHub</div>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>👤 소개</h2>
+
+<p>
+
+전자공학을 공부하며 웹 개발과 데이터 분석을 배우고 있습니다.
+
+</p>
+
+<p>
+
+꾸준히 공부하며 성장하는 개발자가 되는 것이 목표입니다.
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 HANA PROFILE
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
