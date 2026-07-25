@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>게시판</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>게시판</title>
 
+<link rel="stylesheet" href="style.css">
+
+</head>
 <body>
 
-<header>
-<h1>📝 게시판</h1>
+<header class="board-header">
 
-<nav>
-<a href="index.html">홈으로</a>
-</nav>
+    <h1>📝 게시판</h1>
+
+    <div class="menu">
+        <a href="index.html">🏠 홈</a>
+        <button onclick="location.href='write.html'">
+            글쓰기
+        </button>
+    </div>
 
 </header>
 
-<section class="card">
-
-<h2>게시글</h2>
-
-<button onclick="location.href='write.html'">
-  글쓰기
-</button>
+<main>
 
 <div id="postList"></div>
-  
-</section>
+
+</main>
 
 <script type="module" src="board.js"></script>
 
