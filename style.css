@@ -646,3 +646,22 @@ footer p{
         transform:translateY(0);
     }
 }
+
+   @media (max-width:768px){
+
+    #menuBtn{
+        display:block;
+        margin:10px auto;
+    }
+
+    nav{
+        display:none;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+}
