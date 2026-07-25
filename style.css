@@ -494,3 +494,14 @@ body.dark{
 .dark footer{
     color:#ddd;
 }
+body.dark .hero{
+    background:#111827 !important;
+}
+
+body.dark{
+    background:#111827 !important;
+}
+
+body.dark main{
+    background:#111827 !important;
+}
