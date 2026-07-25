@@ -72,11 +72,8 @@ nav a:hover{
     height:220px;
     border-radius:50%;
     object-fit:cover;
-
     border:6px solid white;
-
     box-shadow:0 10px 30px rgba(0,0,0,.15);
-
     margin-bottom:30px;
 }
 
@@ -99,7 +96,96 @@ nav a:hover{
 .hero button{
     background:#2563eb;
     color:white;
-
     border:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.25s;
+}
 
-    padding:
+.hero button:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+/* ===== 카드 ===== */
+
+.card{
+    width:90%;
+    max-width:950px;
+    margin:45px auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+.card p{
+    font-size:17px;
+}
+
+.card ul{
+    padding-left:25px;
+}
+
+.card li{
+    margin-bottom:12px;
+}
+
+/* ===== 버튼 ===== */
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:12px 22px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* ===== 입력 ===== */
+
+input,
+textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    margin:15px 0;
+    font-size:16px;
+}
+
+textarea{
+    min-height:220px;
+    resize:vertical;
+}
+
+/* ===== 공통 컨테이너 ===== */
+
+.container{
+    width:90%;
+    max-width:950px;
+    margin:40px auto;
+}
+
+/* ===== 푸터 ===== */
+
+footer{
+    margin-top:60px;
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid #ddd;
+}
