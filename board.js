@@ -1,4 +1,3 @@
-
 import { db } from "./firebase.js";
 
 import {
@@ -32,4 +31,17 @@ async function loadPosts() {
 
           <p>${post.content}</p>
         </div>
-      `
+      `;
+
+    });
+
+  } catch (e) {
+
+    console.error(e);
+    alert(e.message);
+
+  }
+
+}
+
+loadPosts();
