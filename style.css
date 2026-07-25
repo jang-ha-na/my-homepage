@@ -531,14 +531,14 @@ body.dark .card{
     font-size:20px;
     font-weight:bold;
 }
-   .github-btn{
+.github-btn{
     display:inline-block;
-    margin-left:10px;
+    margin-left:15px;
     padding:12px 20px;
     background:#24292f;
     color:#fff;
     text-decoration:none;
-    border-radius:8px;
+    border-radius:10px;
     font-weight:bold;
     transition:0.3s;
 }
@@ -546,4 +546,4 @@ body.dark .card{
 .github-btn:hover{
     background:#000;
 }
-}
+
