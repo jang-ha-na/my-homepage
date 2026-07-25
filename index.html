@@ -18,6 +18,14 @@
         <a href="#projects">프로젝트</a>
         <a href="#skills">기술 스택</a>
         <a href="#contact">문의</a>
+        <section class="card">
+
+<h2>📊 방문자</h2>
+
+<p>방문자 수 : <span id="visitor">0</span></p>
+
+</section>
+        
         <a href="resume.html">이력서</a>
         <a href="board.html">게시판</a>
         <a href="login.html">로그인</a>
@@ -197,5 +205,19 @@ darkBtn.onclick=function(){
     }
 }
 </script>
+    <script>
+let count = localStorage.getItem("visitor");
+
+if(count == null){
+    count = 0;
+}
+
+count++;
+
+localStorage.setItem("visitor", count);
+
+document.getElementById("visitor").innerText = count;
+</script>
+    
 </body>
 </html>
