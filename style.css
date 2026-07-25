@@ -407,3 +407,21 @@ footer{
    .skills span:hover{
     background:#1d4ed8;
 }
+/* ===== 기술 스택 강제 적용 ===== */
+
+#skills .skills{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    gap:12px !important;
+    margin-top:20px;
+}
+
+#skills .skills span{
+    display:inline-block !important;
+    background:#2563eb !important;
+    color:#ffffff !important;
+    padding:10px 18px !important;
+    margin:6px !important;
+    border-radius:30px !important;
+    font-weight:bold !important;
+}
