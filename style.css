@@ -532,3 +532,10 @@ body.dark .card{
     font-weight:bold;
 }
 
+.project-links{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:15px;
+    flex-wrap:wrap;
+}
