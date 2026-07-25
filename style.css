@@ -602,7 +602,7 @@ footer p{
 .project-btn:hover{
     background:#1d4ed8;
 }
-.profile img{
+.profile{
     width:220px;
     height:220px;
     border-radius:50%;
@@ -612,7 +612,7 @@ footer p{
     transition:0.3s;
 }
 
-.profile img:hover{
+.profile:hover{
     transform:scale(1.05);
 }
 .hero h1{
