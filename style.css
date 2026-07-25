@@ -6,10 +6,15 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial,sans-serif;
-    background:#f3f6fb;
+    background:#f4f7fb;
     color:#222;
+    line-height:1.6;
 }
 
 a{
@@ -20,132 +25,81 @@ a{
 /* ===== 헤더 ===== */
 
 header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
     background:#1f2937;
     color:white;
-    padding:20px 40px;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
+
+    padding:18px 60px;
 }
 
-header h1{
-    font-size:30px;
+.logo{
+    font-size:28px;
+    font-weight:bold;
 }
 
 nav{
     display:flex;
-    gap:20px;
+    align-items:center;
+    gap:30px;
 }
 
 nav a{
     color:white;
     font-weight:bold;
+    transition:.25s;
 }
 
-/* ===== 공통 컨테이너 ===== */
-
-.container{
-    width:90%;
-    max-width:900px;
-
-    margin:40px auto;
-
-    background:white;
-
-    padding:35px;
-
-    border-radius:18px;
-
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
+nav a:hover{
+    color:#60a5fa;
 }
 
-/* ===== 입력 ===== */
-
-input,
-textarea{
-
-    width:100%;
-
-    padding:14px;
-
-    border:1px solid #ddd;
-
-    border-radius:10px;
-
-    margin-top:15px;
-    margin-bottom:20px;
-
-    font-size:16px;
-}
-
-textarea{
-    min-height:220px;
-    resize:vertical;
-}
-
-/* ===== 홈페이지 ===== */
+/* ===== 메인 ===== */
 
 .hero{
     text-align:center;
-    padding:60px 20px;
+    padding:80px 20px 60px;
 }
 
 .profile{
     width:220px;
     height:220px;
-    object-fit:cover;
     border-radius:50%;
-    border:5px solid #fff;
-    box-shadow:0 6px 20px rgba(0,0,0,.15);
-    margin-bottom:25px;
+    object-fit:cover;
+
+    border:6px solid white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    margin-bottom:30px;
 }
 
 .hero h1{
-    font-size:42px;
+    font-size:48px;
     margin-bottom:10px;
 }
 
 .hero h2{
-    font-size:30px;
-    margin-bottom:15px;
+    font-size:34px;
+    margin-bottom:18px;
 }
 
 .hero p{
-    color:#666;
     font-size:20px;
-    margin-bottom:30px;
+    color:#666;
+    margin-bottom:35px;
 }
 
 .hero button{
-    padding:14px 28px;
-    font-size:18px;
-}
+    background:#2563eb;
+    color:white;
 
-.card{
-    width:90%;
-    max-width:900px;
-    margin:30px auto;
-    background:#fff;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
-}
+    border:none;
 
-.card h2{
-    margin-bottom:20px;
-}
-
-.card ul{
-    padding-left:20px;
-}
-
-.card li{
-    margin-bottom:10px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#666;
-}
+    padding:
