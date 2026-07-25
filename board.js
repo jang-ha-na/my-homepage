@@ -17,6 +17,15 @@ async function loadPosts() {
 
         const post = doc.data();
 
+        const date = post.createdAt
+            ? post.createdAt.toDate().toLocaleDateString("ko-KR")
+            : "";
+
+        const preview =
+            post.content.length > 80
+                ? post.content.substring(0, 80) + "..."
+                : post.content;
+
         postList.innerHTML += `
         <div class="card">
 
@@ -26,7 +35,11 @@ async function loadPosts() {
                 </a>
             </h3>
 
-            <p>${post.content}</p>
+            <p><strong>👤 ${post.writer ?? "익명"}</strong></p>
+
+            <p>📅 ${date}</p>
+
+            <p>${preview}</p>
 
         </div>
         `;
