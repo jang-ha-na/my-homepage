@@ -32,12 +32,12 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    flex-wrap:wrap;
-
     background:#1f2937;
     color:#fff;
-
     padding:20px 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 .logo{
@@ -47,25 +47,8 @@ header{
 
 nav{
     display:flex;
-    gap:25px;
-    flex-wrap:wrap;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
     gap:20px;
-    flex-wrap:wrap;
-}
-
-#menuBtn{
-    display:none;
-    background:none;
-    border:none;
-    color:white;
-    font-size:30px;
-    cursor:pointer;
+    align-items:center;
 }
 
 nav a{
@@ -76,6 +59,15 @@ nav a{
 
 nav a:hover{
     color:#60a5fa;
+}
+
+#menuBtn{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
 }
 
 /* =========================
@@ -94,12 +86,13 @@ nav a:hover{
     height:220px;
     border-radius:50%;
     object-fit:cover;
+    border:5px solid #2563eb;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    transition:.3s;
+}
 
-    border:6px solid white;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-
-    margin-bottom:30px;
+.profile:hover{
+    transform:scale(1.08) rotate(3deg);
 }
 
 .hero h1{
@@ -115,67 +108,98 @@ nav a:hover{
 .hero p{
     color:#666;
     font-size:20px;
-    margin-bottom:35px;
+    margin-bottom:25px;
 }
-
-.hero button{
-    background:#2563eb;
-    color:white;
-
-    border:none;
-
-    border-radius:10px;
-
-    padding:15px 35px;
-
-    font-size:18px;
-
-    cursor:pointer;
-
-    transition:.25s;
-}
-
-.hero button:hover{
-    background:#1d4ed8;
-}
-
 /* =========================
    카드
 ========================= */
 
 .card{
-
     width:90%;
     max-width:950px;
-
     margin:35px auto;
-
     background:white;
-
     border-radius:18px;
-
     padding:35px;
-
     box-shadow:0 8px 20px rgba(0,0,0,.08);
-
 }
 
 .card h2{
-    margin-bottom:20px;
     color:#2563eb;
+    margin-bottom:20px;
 }
 
-.card p,
-.card li{
-    font-size:17px;
-}
-
-.card ul{
-    padding-left:25px;
+.card p{
+    line-height:1.8;
+    color:#555;
+    margin-bottom:15px;
 }
 
 /* =========================
-   공통 버튼
+   프로젝트
+========================= */
+
+.project{
+    background:#f8fbff;
+    border-left:5px solid #2563eb;
+    border-radius:15px;
+    padding:20px;
+    margin:25px 0;
+}
+
+.project h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.project-links{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.project-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.project-btn:hover{
+    background:#1d4ed8;
+}
+
+/* =========================
+   기술 스택
+========================= */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.skills span{
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.skills span:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+/* =========================
+   버튼
 ========================= */
 
 button{
@@ -185,6 +209,7 @@ button{
     border-radius:10px;
     padding:12px 24px;
     cursor:pointer;
+    transition:.3s;
 }
 
 button:hover{
@@ -192,335 +217,38 @@ button:hover{
 }
 
 /* =========================
-   입력창
+   맨 위 버튼
 ========================= */
-
-input,
-textarea{
-    width:100%;
-    padding:14px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    font-size:16px;
-    margin:15px 0;
-}
-
-textarea{
-    min-height:220px;
-    resize:vertical;
-}
-
-/* =========================
-   컨테이너
-========================= */
-
-.container{
-    width:90%;
-    max-width:950px;
-    margin:40px auto;
-}
-
-/* =========================
-   푸터
-========================= */
-
-footer{
-    text-align:center;
-    color:#777;
-    padding:30px;
-    margin-top:60px;
-    border-top:1px solid #ddd;
-}
-
-/* =========================
-   모바일
-========================= */
-
-@media (max-width:768px){
-
-    header{
-        flex-direction:column;
-        gap:20px;
-        text-align:center;
-    }
-
-   .card h3{
-    color:#2563eb;
-    margin-top:25px;
-    margin-bottom:8px;
-}
-
-.card h3:first-of-type{
-    margin-top:10px;
-}
-
-.card p{
-    color:#555;
-    line-height:1.8;
-.card h3{
-    color:#2563eb;
-    margin-top:25px;
-    margin-bottom:8px;
-}
-
-.card h3:first-of-type{
-    margin-top:10px;
-}
-
-.card p{
-    color:#555;
-    line-height:1.8;
-}
-#skills ul{
-    list-style:none;
-    padding:0;
-}
-
-#skills li{
-    background:#eef4ff;
-    margin:10px 0;
-    padding:12px 16px;
-    border-radius:10px;
-    font-weight:bold;
-}
-.project{
-    border-left:5px solid #2563eb;
-    padding-left:20px;
-    margin:25px 0;
-}
-
-.project h3{
-    color:#2563eb;
-    margin-bottom:10px;
-}
-
-.project p{
-    margin-bottom:15px;
-}
-
-.project-btn{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:10px 18px;
-    border-radius:8px;
-    margin-right:10px;
-    transition:.2s;
-}
-
-.project-btn:hover{
-    background:#1d4ed8;
-}
-/* ===== 프로젝트 ===== */
-
-.project{
-    border-left:5px solid #2563eb;
-    background:#f8fbff;
-    padding:20px;
-    border-radius:10px;
-    margin:25px 0;
-}
-
-.project h3{
-    color:#2563eb;
-    margin-bottom:10px;
-}
-
-.project p{
-    margin-bottom:15px;
-}
-
-.project-btn{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:10px 18px;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.2s;
-}
-
-.project-btn:hover{
-    background:#1d4ed8;
-}
-/* ===== 기술 스택 ===== */
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:20px;
-}
-
-.skills span{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:10px 18px;
-    margin:6px;
-    border-radius:30px;
-    font-weight:bold;
-}
-
-.skills span:hover{
-    transform:translateY(-3px);
-    background:#1d4ed8;
-}
-/* ===== 프로젝트 ===== */
-
-.project{
-    background:#f8fbff;
-    border-left:5px solid #2563eb;
-    padding:20px;
-    border-radius:15px;
-    margin:30px 0;
-}
-
-.project-img{
-    width:100%;
-    border-radius:10px;
-    margin-bottom:15px;
-    border:1px solid #ddd;
-}
-
-.project h3{
-    color:#2563eb;
-    margin-bottom:10px;
-}
-
-.project p{
-    margin-bottom:18px;
-}
-
-.project-btn{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:10px 18px;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.2s;
-}
-
-.project-btn:hover{
-    background:#1d4ed8;
-}
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-top:20px;
-}
-
-.skills span{
-    display:inline-block;
-    background:#2563eb;
-    color:#ffffff;
-    padding:10px 18px;
-    margin:6px;
-    border-radius:30px;
-    font-weight:bold;
-}
-   .skills span:hover{
-    background:#1d4ed8;
-}
-/* ===== 기술 스택 강제 적용 ===== */
-
-#skills .skills{
-    display:flex !important;
-    flex-wrap:wrap !important;
-    gap:12px !important;
-    margin-top:20px;
-}
-
-#skills .skills span{
-    display:inline-block !important;
-    background:#2563eb !important;
-    color:#ffffff !important;
-    padding:10px 18px !important;
-    margin:6px !important;
-    border-radius:30px !important;
-    font-weight:bold !important;
-}
-/* ===== 맨 위 버튼 ===== */
 
 #topBtn{
-
     display:none;
-
     position:fixed;
-
     right:25px;
     bottom:25px;
-
     width:55px;
     height:55px;
-
-    border:none;
-
     border-radius:50%;
-
     background:#2563eb;
-
     color:white;
-
     font-size:24px;
-
-    cursor:pointer;
-
     box-shadow:0 6px 20px rgba(0,0,0,.2);
-
-    transition:.25s;
-
+    z-index:999;
 }
 
 #topBtn:hover{
-
-    background:#1d4ed8;
-
     transform:scale(1.1);
-
 }
-/* ===== 다크모드 ===== */
+
+/* =========================
+   다크모드
+========================= */
 
 #darkBtn{
-    margin-left:12px;
-    padding:8px 14px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
     font-size:18px;
+    padding:8px 14px;
 }
 
 body.dark{
-    background:#111827 !important;
-    color:white !important;
-}
-
-.dark .card{
-    background:#1f2937;
-    color:white;
-}
-
-.dark .hero p{
-    color:#ddd;
-}
-
-.dark footer{
-    color:#ddd;
-}
-body.dark .hero{
-    background:#111827 !important;
-}
-
-body.dark{
-    background:#111827 !important;
-}
-
-body.dark main{
-    background:#111827 !important;
-}
-   body.dark{
     background:#111827;
     color:white;
 }
@@ -529,74 +257,20 @@ body.dark .card{
     background:#1f2937;
     color:white;
 }
-.visitor-card{
-    width:220px;
-    margin:20px auto;
-    padding:15px;
-    text-align:center;
+
+body.dark .hero p{
+    color:#ddd;
 }
 
-.visitor-card h2{
-    margin:0 0 10px 0;
-    font-size:22px;
-}
-
-.visitor-card p{
-    margin:0;
-    font-size:20px;
-    font-weight:bold;
-}
-
-.project-links{
-    display:flex;
-    justify-content:center;
-    gap:12px;
-    margin-top:15px;
-    flex-wrap:wrap;
-}
-.project-links{
-    margin-top:15px;
-}
-
-.project-btn{
-    display:inline-block;
-    background:#2563eb;
-    color:white !important;
-    padding:10px 18px;
-    border-radius:8px;
-    text-decoration:none;
-    margin-right:10px;
-    font-weight:bold;
-}
-
-.project-btn:hover{
-    background:#1d4ed8;
-}
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-top:20px;
-}
-
-.skills span{
-    display:inline-block;
-    background:#2563eb;
+body.dark footer{
+    background:#0f172a;
     color:white;
-    padding:10px 18px;
-    border-radius:30px;
-    font-weight:bold;
 }
-   .project-btn{
-    display:inline-block;
-    margin:8px 8px 0 0;
-    padding:10px 18px;
-    background:#2563eb;
-    color:#fff;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
+
+/* =========================
+   푸터
+========================= */
+
 footer{
     background:#1e293b;
     color:white;
@@ -612,42 +286,19 @@ footer h3{
 
 footer p{
     margin:8px 0;
-    opacity:0.9;
 }
-.project-btn:hover{
-    background:#1d4ed8;
-}
-.profile{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #2563eb;
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-    transition:transform .3s ease;
-    cursor:pointer;
-}
+/* =========================
+   반응형 (모바일)
+========================= */
 
-.profile:hover{
-    transform:scale(1.1) rotate(3deg);
-}
-   
-.hero h1{
-    animation:fadeUp 1s ease;
-}
+@media (max-width:768px){
 
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(30px);
+    header{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:15px;
     }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-   @media (max-width:768px){
 
     #menuBtn{
         display:block;
@@ -656,44 +307,48 @@ footer p{
 
     nav{
         display:none;
+        width:100%;
         flex-direction:column;
         gap:15px;
+        padding-top:15px;
     }
 
     nav.show{
         display:flex;
     }
 
-}
-/* 햄버거 버튼 */
-#menuBtn{
-    display:none;
-    background:none;
-    border:none;
-    color:white;
-    font-size:32px;
-    cursor:pointer;
-}
+    .hero h1{
+        font-size:36px;
+    }
 
-/* 모바일 */
-@media (max-width:768px){
+    .hero h2{
+        font-size:28px;
+    }
 
-    header{
+    .hero p{
+        font-size:18px;
+    }
+
+    .profile{
+        width:180px;
+        height:180px;
+    }
+
+    .card{
+        width:95%;
+        padding:25px;
+    }
+
+    .project-links{
+        flex-direction:column;
+    }
+
+    .project-btn{
+        width:100%;
         text-align:center;
     }
 
-    #menuBtn{
-        display:block;
-        margin:15px auto;
-    }
-
-    nav{
-        display:none;
-        flex-direction:column;
-        gap:18px;
-    }
-
-    nav.show{
-        display:flex;
+    .skills{
+        justify-content:center;
     }
 }
