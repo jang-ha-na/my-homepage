@@ -477,9 +477,9 @@ footer{
     font-size:18px;
 }
 
-.dark{
-    background:#111827;
-    color:white;
+body.dark{
+    background:#111827 !important;
+    color:white !important;
 }
 
 .dark .card{
