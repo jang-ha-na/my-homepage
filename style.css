@@ -464,3 +464,33 @@ footer{
     transform:scale(1.1);
 
 }
+/* ===== 다크모드 ===== */
+
+#darkBtn{
+    margin-left:15px;
+    background:white;
+    color:#2563eb;
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.dark{
+    background:#111827;
+    color:white;
+}
+
+.dark .card{
+    background:#1f2937;
+    color:white;
+}
+
+.dark .hero p{
+    color:#ddd;
+}
+
+.dark footer{
+    color:#ddd;
+}
