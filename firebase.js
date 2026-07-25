@@ -15,3 +15,5 @@ const app = initializeApp(firebaseConfig);
 
 export { app };
 export const auth = getAuth(app);
+
+import { getFirestore } from "https://www.gstatic.com/firebasejs
