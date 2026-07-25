@@ -175,6 +175,18 @@ function topFunction(){
 
 </script>
 </footer>
+<script>
+const darkBtn=document.getElementById("darkBtn");
 
+darkBtn.onclick=function(){
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        darkBtn.innerHTML="☀️";
+    }else{
+        darkBtn.innerHTML="🌙";
+    }
+}
+</script>
 </body>
 </html>
