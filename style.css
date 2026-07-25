@@ -296,27 +296,24 @@ footer p{
     header{
         flex-direction:column;
         align-items:center;
-        text-align:center;
-        gap:15px;
     }
 
     #menuBtn{
         display:block;
-        margin:10px auto;
     }
 
     nav{
         display:none;
-        width:100%;
         flex-direction:column;
+        width:100%;
         gap:15px;
-        padding-top:15px;
+        text-align:center;
     }
 
     nav.show{
         display:flex;
     }
-
+}
     .hero h1{
         font-size:36px;
     }
