@@ -5,6 +5,8 @@
 }
 
 body{
+    margin:0;
+    padding:0;
     font-family:Arial,sans-serif;
     background:#f5f5f7;
     color:#222;
@@ -15,6 +17,7 @@ header{
     position:fixed;
     top:0;
     left:0;
+    right:0;
     width:100%;
     z-index:1000;
     display:flex;
@@ -23,7 +26,6 @@ header{
     padding:25px 20px;
     background:#1f1f1f;
 }
-
 .logo{
     color:white;
     font-size:28px;
