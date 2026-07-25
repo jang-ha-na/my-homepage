@@ -1,18 +1,29 @@
-import { db } from "./firebase.js";
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-const saveBtn = document.getElementById("saveBtn");
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBRLXq0S5k6-v9LclQm8hKiLGPY-szYve4",
+  authDomain: "hanaprofile.firebaseapp.com",
+  projectId: "hanaprofile",
+  storageBucket: "hanaprofile.firebasestorage.app",
+  messagingSenderId: "511043861506",
+  appId: "1:511043861506:web:037501a7c9c26fc19fbb1b",
+  measurementId: "G-QP6R4KBPN0"
+};
 
-saveBtn.addEventListener("click", async () => {
-  const title = document.getElementById("title").value;
-  const content = document.getElementById("content").value;
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
-  await addDoc(collection(db, "posts"), {
-    title,
-    content,
-    createdAt: new Date()
-  });
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
-  alert("저장되었습니다!");
-  location.href = "board.html";
-});
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+export { auth, db };
