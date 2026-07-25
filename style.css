@@ -531,3 +531,17 @@ body.dark .card{
     font-size:20px;
     font-weight:bold;
 }
+   .github-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#24292f;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.github-btn:hover{
+    background:#000;
+}
