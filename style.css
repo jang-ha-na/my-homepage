@@ -227,4 +227,30 @@ footer{
         text-align:center;
     }
 
-    nav{
+   .card h3{
+    color:#2563eb;
+    margin-top:25px;
+    margin-bottom:8px;
+}
+
+.card h3:first-of-type{
+    margin-top:10px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+.card h3{
+    color:#2563eb;
+    margin-top:25px;
+    margin-bottom:8px;
+}
+
+.card h3:first-of-type{
+    margin-top:10px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+}
