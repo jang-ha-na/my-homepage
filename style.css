@@ -572,3 +572,17 @@ body.dark .card{
     border-radius:30px;
     font-weight:bold;
 }
+   .project-btn{
+    display:inline-block;
+    margin:8px 8px 0 0;
+    padding:10px 18px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.project-btn:hover{
+    background:#1d4ed8;
+}
