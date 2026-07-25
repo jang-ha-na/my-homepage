@@ -1,4 +1,6 @@
+
 import { db } from "./firebase.js";
+
 import {
   collection,
   getDocs
@@ -7,7 +9,9 @@ import {
 const postList = document.getElementById("postList");
 
 async function loadPosts() {
+
   try {
+
     const snapshot = await getDocs(collection(db, "posts"));
 
     console.log("문서 개수:", snapshot.size);
@@ -15,20 +19,17 @@ async function loadPosts() {
     postList.innerHTML = "";
 
     snapshot.forEach((doc) => {
+
       const post = doc.data();
 
       postList.innerHTML += `
         <div class="card">
-          <h3>${post.title}</h3>
+          <h3>
+            <a href="view.html?id=${doc.id}">
+              ${post.title}
+            </a>
+          </h3>
+
           <p>${post.content}</p>
         </div>
-      `;
-    });
-
-  } catch (e) {
-    console.error(e);
-    alert(e.message);
-  }
-}
-
-loadPosts();
+      `
