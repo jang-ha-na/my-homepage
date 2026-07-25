@@ -18,17 +18,3 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    loginLink.textContent = "로그아웃";
-    loginLink.href = "#";
-
-    loginLink.addEventListener("click", async (e) => {
-      e.preventDefault();
-      await signOut(auth);
-      alert("로그아웃되었습니다.");
-      location.href = "index.html";
-    });
-  }
-});
