@@ -665,3 +665,35 @@ footer p{
     }
 
 }
+/* 햄버거 버튼 */
+#menuBtn{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+}
+
+/* 모바일 */
+@media (max-width:768px){
+
+    header{
+        text-align:center;
+    }
+
+    #menuBtn{
+        display:block;
+        margin:15px auto;
+    }
+
+    nav{
+        display:none;
+        flex-direction:column;
+        gap:18px;
+    }
+
+    nav.show{
+        display:flex;
+    }
+}
