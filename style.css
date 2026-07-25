@@ -29,8 +29,14 @@ header{
 
 nav{
     display:flex;
-    gap:20px;
-    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+}
+
+nav a{
+    white-space:nowrap;
 }
 
 nav a{
