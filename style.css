@@ -467,12 +467,10 @@ footer{
 /* ===== 다크모드 ===== */
 
 #darkBtn{
-    margin-left:15px;
-    background:white;
-    color:#2563eb;
+    margin-left:12px;
+    padding:8px 14px;
     border:none;
-    padding:8px 12px;
-    border-radius:8px;
+    border-radius:10px;
     cursor:pointer;
     font-size:18px;
 }
