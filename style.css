@@ -295,3 +295,70 @@ button {
     max-width: 800px;
     margin: 40px auto;
 }
+/* ===== 게시판 ===== */
+
+.board-header{
+    max-width:900px;
+    margin:40px auto 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.board-header h1{
+    margin:0;
+}
+
+.board-header .menu{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.board-header a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.board-header button{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#postList{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card h3 a{
+    color:#111;
+    text-decoration:none;
+    font-size:22px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.7;
+}
