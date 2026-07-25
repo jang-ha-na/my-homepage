@@ -531,20 +531,4 @@ body.dark .card{
     font-size:20px;
     font-weight:bold;
 }
-.github-btn{
-    display:inline-block;
-    padding:12px 20px;
-    margin-left:12px;
-    background:#24292f;
-    color:white;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:bold;
-}
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:15px;
-    margin-top:20px;
-}
+
