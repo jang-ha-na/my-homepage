@@ -21,4 +21,16 @@ async function loadPosts() {
       <div class="card">
         <h3>
           <a href="view.html?id=${doc.id}">
-            ${
+            ${post.title}
+          </a>
+        </h3>
+
+        <p>${post.content}</p>
+      </div>
+    `;
+
+  });
+
+}
+
+loadPosts();
