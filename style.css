@@ -349,3 +349,7 @@ footer p{
         justify-content:center;
     }
 }
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:120px;
+}
