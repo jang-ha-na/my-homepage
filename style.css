@@ -425,3 +425,42 @@ footer{
     border-radius:30px !important;
     font-weight:bold !important;
 }
+/* ===== 맨 위 버튼 ===== */
+
+#topBtn{
+
+    display:none;
+
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.2);
+
+    transition:.25s;
+
+}
+
+#topBtn:hover{
+
+    background:#1d4ed8;
+
+    transform:scale(1.1);
+
+}
