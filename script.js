@@ -38,3 +38,8 @@ if(topBtn){
         });
     });
 }
+document.querySelectorAll("#menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("show");
+    });
+});
