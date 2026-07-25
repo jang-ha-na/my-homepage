@@ -225,3 +225,33 @@ nav a{
     width:100%;
     margin-top:15px;
 }
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 250px;
+  resize: vertical;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
