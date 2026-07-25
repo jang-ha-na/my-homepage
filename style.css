@@ -514,3 +514,19 @@ body.dark .card{
     background:#1f2937;
     color:white;
 }
+.visitor-card{
+    max-width:350px;
+    margin:20px auto;
+    padding:15px 20px;
+    text-align:center;
+}
+
+.visitor-card h2{
+    margin-bottom:8px;
+    font-size:22px;
+}
+
+.visitor-card p{
+    margin:0;
+    font-size:18px;
+}
