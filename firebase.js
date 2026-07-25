@@ -1,20 +1,18 @@
-// Firebase SDK
-import { getFirestore } from "https://www.gstatic.com/firebasejs
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+import { db } from "./firebase.js";
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBRLXq0S5k6-v9LclQm8hKiLGPY-szYve4",
-  authDomain: "hanaprofile.firebaseapp.com",
-  projectId: "hanaprofile",
-  storageBucket: "hanaprofile.firebasestorage.app",
-  messagingSenderId: "511043861506",
-  appId: "1:511043861506:web:037501a7c9c26fc19fbb1b"
-};
+const saveBtn = document.getElementById("saveBtn");
 
+saveBtn.addEventListener("click", async () => {
+  const title = document.getElementById("title").value;
+  const content = document.getElementById("content").value;
 
-const app = initializeApp(firebaseConfig);
+  await addDoc(collection(db, "posts"), {
+    title,
+    content,
+    createdAt: new Date()
+  });
 
-export { app };
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+  alert("저장되었습니다!");
+  location.href = "board.html";
+});
