@@ -40,5 +40,7 @@ if (snap.exists()) {
         }
 
     };
-
+document.getElementById("editBtn").onclick = () => {
+    location.href = `edit.html?id=${id}`;
+};
 }
