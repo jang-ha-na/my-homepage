@@ -8,16 +8,18 @@ const postList = document.getElementById("postList");
 
 async function loadPosts() {
   try {
-    const querySnapshot = await getDocs(collection(db, "posts"));
+    const snapshot = await getDocs(collection(db, "posts"));
+
+    console.log("문서 개수:", snapshot.size);
 
     postList.innerHTML = "";
 
-    querySnapshot.forEach((doc) => {
+    snapshot.forEach((doc) => {
       const post = doc.data();
 
       postList.innerHTML += `
         <div class="card">
-          <h3><a href="view.html?id=${doc.id}">${post.title}</a></h3>
+          <h3>${post.title}</h3>
           <p>${post.content}</p>
         </div>
       `;
