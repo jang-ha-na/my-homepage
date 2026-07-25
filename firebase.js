@@ -1,4 +1,5 @@
 // Firebase SDK
+import { getFirestore } from "https://www.gstatic.com/firebasejs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
@@ -11,9 +12,9 @@ const firebaseConfig = {
   appId: "1:511043861506:web:037501a7c9c26fc19fbb1b"
 };
 
+
 const app = initializeApp(firebaseConfig);
 
 export { app };
 export const auth = getAuth(app);
-
-import { getFirestore } from "https://www.gstatic.com/firebasejs
+export const db = getFirestore(app);
