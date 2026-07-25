@@ -615,3 +615,17 @@ footer p{
 .profile img:hover{
     transform:scale(1.05);
 }
+.hero h1{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
