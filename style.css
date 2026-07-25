@@ -326,3 +326,27 @@ footer{
 .project-btn:hover{
     background:#1d4ed8;
 }
+/* ===== 기술 스택 ===== */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+}
+
+.skills span{
+    background:#2563eb;
+    color:white;
+    padding:12px 22px;
+    border-radius:999px;
+    font-weight:bold;
+    font-size:16px;
+    transition:.25s;
+    cursor:default;
+}
+
+.skills span:hover{
+    transform:translateY(-3px);
+    background:#1d4ed8;
+}
