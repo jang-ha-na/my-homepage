@@ -1,27 +1,40 @@
-import { auth } from "./firebase.js";
-import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
-
-window.addEventListener("DOMContentLoaded", () => {
-  const loginLink = document.getElementById("loginLink");
-
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      loginLink.textContent = "로그아웃";
-      loginLink.href = "#";
-
-      loginLink.onclick = async (e) => {
-        e.preventDefault();
-        await signOut(auth);
-        alert("로그아웃되었습니다.");
-        location.reload();
-      };
-    }
-  });
-});
-
 const menuBtn = document.getElementById("menuBtn");
-const nav = document.querySelector("nav");
+const menu = document.getElementById("menu");
+const darkBtn = document.getElementById("darkBtn");
+const topBtn = document.getElementById("topBtn");
 
-menuBtn.addEventListener("click", () => {
-    nav.classList.toggle("show");
+// 햄버거 메뉴
+if(menuBtn){
+    menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+}
+
+// 다크모드
+if(darkBtn){
+    darkBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        darkBtn.textContent =
+            document.body.classList.contains("dark")
+            ? "☀️"
+            : "🌙";
+    });
+}
+
+// 맨 위 버튼
+window.addEventListener("scroll", () => {
+    if(topBtn){
+        topBtn.style.display =
+            window.scrollY > 300 ? "block" : "none";
+    }
 });
+
+if(topBtn){
+    topBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+    });
+}
