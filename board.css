@@ -88,3 +88,9 @@ button:hover{
 p{
     margin:10px 0;
 }
+.button-group{
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+    margin-top:20px;
+}
