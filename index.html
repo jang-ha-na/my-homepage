@@ -219,6 +219,17 @@ localStorage.setItem("visitor", count);
 
 document.getElementById("visitor").innerText = count;
 </script>
-    
+    <script>
+function updateClock() {
+    const now = new Date();
+
+    document.getElementById("clock").innerHTML =
+        now.toLocaleDateString("ko-KR") + "<br>" +
+        now.toLocaleTimeString("ko-KR");
+}
+
+setInterval(updateClock, 1000);
+updateClock();
+</script>
 </body>
 </html>
