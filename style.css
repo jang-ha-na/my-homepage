@@ -255,3 +255,17 @@ button {
 button:hover {
   background: #1d4ed8;
 }
+
+.card input {
+    width: 100% !important;
+}
+
+.card textarea {
+    width: 100% !important;
+    min-height: 300px !important;
+}
+
+.card {
+    max-width: 800px;
+    margin: 40px auto;
+}
