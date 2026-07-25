@@ -608,13 +608,15 @@ footer p{
     border-radius:50%;
     object-fit:cover;
     border:5px solid #2563eb;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
-    transition:0.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    transition:transform .3s ease;
+    cursor:pointer;
 }
 
 .profile:hover{
-    transform:scale(1.05);
+    transform:scale(1.1) rotate(3deg);
 }
+   
 .hero h1{
     animation:fadeUp 1s ease;
 }
