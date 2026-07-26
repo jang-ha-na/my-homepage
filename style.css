@@ -15,7 +15,6 @@ html{
 
 body{
     font-family:Arial,sans-serif;
-    background:#f4f7fb;
     color:#222;
     line-height:1.6;
 }
@@ -161,12 +160,11 @@ nav a:hover{
 ========================= */
 
 .project{
-    background:#f8fbff;
-    border-left:5px solid #2563eb;
-    border-radius:15px;
-    padding:20px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:16px;
+    padding:25px;
     margin:25px 0;
-    transition:.3s;
 }
 
 .project:hover{
