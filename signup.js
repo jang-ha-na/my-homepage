@@ -17,3 +17,10 @@ btn.addEventListener("click", async () => {
     alert("회원가입 실패: " + e.message);
   }
 });
+const darkBtn = document.getElementById("darkBtn");
+
+if (darkBtn) {
+    darkBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+    });
+}
