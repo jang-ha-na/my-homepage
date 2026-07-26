@@ -1,3 +1,9 @@
+import { auth } from "./firebase.js";
+import {
+  onAuthStateChanged,
+  signOut
+} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
+
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 
@@ -42,4 +48,25 @@ const observer = new IntersectionObserver((entries)=>{
 
 cards.forEach(card=>{
     observer.observe(card);
+});
+
+const loginLink = document.querySelector('a[href="login.html"]');
+
+onAuthStateChanged(auth, (user) => {
+    if (!loginLink) return;
+
+    if (user) {
+        loginLink.textContent = "로그아웃";
+        loginLink.href = "#";
+
+        loginLink.onclick = async (e) => {
+            e.preventDefault();
+            await signOut(auth);
+            location.reload();
+        };
+    } else {
+        loginLink.textContent = "로그인";
+        loginLink.href = "login.html";
+        loginLink.onclick = null;
+    }
 });
