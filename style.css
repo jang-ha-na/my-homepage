@@ -384,3 +384,10 @@ footer p{
         justify-content:center;
     }
 }
+body {
+    background-image: url("space.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
