@@ -51,55 +51,64 @@
     text-decoration:none;
     border-radius:8px;
 }
-    /* ===== 프로젝트 전체 ===== */
+/* ==========================
+   프로젝트 공통 디자인
+========================== */
+
 .project-detail{
     max-width:1000px;
     margin:50px auto;
     padding:20px;
 }
 
-/* ===== 대제목 ===== */
+/* 대제목 */
 .project-detail h1{
-    color:#fff;
-    text-align:center;
-    font-size:56px;
+    color:#ffffff;
+    font-size:58px;
     font-weight:900;
+    text-align:center;
     margin-bottom:40px;
-    text-shadow:0 0 15px rgba(96,165,250,.7);
+    text-shadow:0 0 15px rgba(96,165,250,.6);
 }
 
-/* ===== 개발정보 박스 ===== */
+/* 개발정보 박스 */
 .info-box{
-    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    background:linear-gradient(135deg,#1e3a8a,#312e81);
+    border-left:6px solid #60a5fa;
     border-radius:20px;
     padding:25px;
-    margin:30px 0;
-    color:white;
+    margin:35px 0;
     box-shadow:0 10px 30px rgba(37,99,235,.35);
+}
+
+.info-box p{
+    color:white;
+    font-size:22px;
+    margin:10px 0;
 }
 
 .info-box strong{
     color:#7dd3fc;
 }
 
-/* ===== 이미지 ===== */
+/* 이미지 */
 .project-detail img{
     width:85%;
-    max-width:900px;
     display:block;
-    margin:30px auto;
+    margin:35px auto;
     border-radius:18px;
     box-shadow:0 10px 30px rgba(0,0,0,.35);
 }
 
-/* ===== 소제목 ===== */
+/* 소제목 */
 .project-detail h2{
     color:#7dd3fc;
     font-size:42px;
-    margin:40px 0 15px;
+    margin-top:40px;
+    margin-bottom:15px;
 }
 
-/* ===== 내용 ===== */
+/* 내용 */
 .project-detail p,
 .project-detail li{
     color:#f3f4f6;
@@ -107,7 +116,7 @@
     line-height:1.8;
 }
 
-/* ===== 기술 배지 ===== */
+/* 기술 스택 */
 .tech{
     display:flex;
     flex-wrap:wrap;
@@ -116,18 +125,59 @@
 }
 
 .tech span{
-    background:#4f6df5;
+    background:linear-gradient(135deg,#3b82f6,#6366f1);
     color:white;
-    padding:12px 22px;
+    padding:12px 24px;
     border-radius:999px;
-    font-weight:bold;
     font-size:20px;
+    font-weight:bold;
 }
 
-/* ===== 버튼 ===== */
+/* 버튼 */
 .back-btn{
     display:inline-block;
-   
+    margin-top:40px;
+    padding:15px 30px;
+    background:#2563eb;
+    color:white;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+}
+
+/* 모바일 */
+@media(max-width:768px){
+
+    .project-detail h1{
+        font-size:40px;
+    }
+
+    .project-detail h2{
+        font-size:30px;
+    }
+
+    .project-detail img{
+        width:100%;
+    }
+
+    .project-detail p,
+    .project-detail li{
+        font-size:18px;
+    }
+
+    .info-box p{
+        font-size:18px;
+    }
+
+    .tech span{
+        font-size:16px;
+        padding:10px 18px;
+    }
+}
 </style>
 
 </head>
