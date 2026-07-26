@@ -526,3 +526,60 @@ p{
 h1{
     color:white !important;
 }
+/* ===== 프로젝트 대제목 ===== */
+.project-detail h1{
+    color:#ffffff !important;
+    font-size:56px;
+    font-weight:900;
+    text-align:center;
+    margin-bottom:40px;
+    text-shadow:0 0 15px rgba(96,165,250,.6);
+}
+
+/* ===== 소제목 ===== */
+.project-detail h2{
+    color:#7dd3fc !important;
+    font-size:48px;
+    font-weight:800;
+    margin:40px 0 15px;
+}
+
+/* ===== 내용 ===== */
+.project-detail p,
+.project-detail li{
+    color:#f3f4f6 !important;
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* ===== 정보 박스 ===== */
+.info-box{
+    background:linear-gradient(135deg,#1e40af,#2563eb);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:20px;
+    padding:25px;
+    margin:30px 0;
+    color:white;
+    box-shadow:0 10px 30px rgba(37,99,235,.35);
+}
+
+.info-box strong{
+    color:#7dd3fc;
+}
+
+/* ===== 모바일 ===== */
+@media (max-width:768px){
+
+    .project-detail h1{
+        font-size:40px;
+    }
+
+    .project-detail h2{
+        font-size:28px;
+    }
+
+    .project-detail p,
+    .project-detail li{
+        font-size:18px;
+    }
+}
