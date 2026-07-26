@@ -516,3 +516,9 @@ ul li{
     color:#f3f4f6;
     margin:10px 0;
 }
+.project h2,
+.project p,
+.project h3{
+    color:#fff;
+    text-shadow:2px 2px 5px black;
+}
