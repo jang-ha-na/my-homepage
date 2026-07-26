@@ -353,3 +353,8 @@ html{
     scroll-behavior:smooth;
     scroll-padding-top:120px;
 }
+.project img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
