@@ -250,4 +250,137 @@ button:hover{
     display:none;
     position:fixed;
     right:25px;
-    bottom:
+    bottom:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#2563eb;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+    box-shadow:0 6px 20px rgba(0,0,0,.2);
+    transition:.3s;
+    z-index:999;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+}
+
+/* =========================
+   다크모드
+========================= */
+
+#darkBtn{
+    font-size:18px;
+    padding:8px 14px;
+}
+
+body.dark{
+    background:#111827;
+    color:#fff;
+}
+
+body.dark .card{
+    background:#1f2937;
+}
+
+body.dark .project{
+    background:#273549;
+}
+
+body.dark .hero p,
+body.dark .card p{
+    color:#ddd;
+}
+
+body.dark footer{
+    background:#0f172a;
+}
+
+/* =========================
+   푸터
+========================= */
+
+footer{
+    background:#1e293b;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:60px;
+}
+
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* =========================
+   모바일
+========================= */
+
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    #menuBtn{
+        display:block;
+        margin-top:10px;
+    }
+
+    nav{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .profile{
+        width:180px;
+        height:180px;
+    }
+
+    .card{
+        width:95%;
+        padding:25px;
+    }
+
+    .project-links{
+        flex-direction:column;
+    }
+
+    .project-btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .skills,
+    .tech{
+        justify-content:center;
+    }
+}
