@@ -359,3 +359,10 @@ html{
     margin-bottom:15px;
     border:1px solid #ddd;
 }
+.project{
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
+    box-shadow:0 
