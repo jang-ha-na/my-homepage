@@ -366,3 +366,21 @@ html{
 .project:hover{
     transform:translateY(-5px);
     box-shadow:0 
+
+   .tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tech span{
+    background:#4f6df5;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.tech span:hover{
+    transform:scale(1.1);
+}
