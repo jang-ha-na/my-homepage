@@ -389,7 +389,9 @@ footer p{
     }
 }
 body {
-    background-image: url("space.jpg");
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("space.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
