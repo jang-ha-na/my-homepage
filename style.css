@@ -128,29 +128,35 @@ nav a:hover{
 /* =========================
    카드
 ========================= */
-
 .card{
     width:90%;
     max-width:1000px;
     margin:35px auto;
     padding:35px;
 
-    background:#fff;
-    border-radius:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
 
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+
+    box-shadow:0 8px 32px rgba(0,0,0,.3);
+
+    color:white;
+}
 .card h2{
-    color:#2563eb;
-    margin-bottom:20px;
+    color:#7dd3fc;
 }
 
 .card p{
-    color:#555;
-    line-height:1.8;
-    margin-bottom:15px;
+    color:#f3f4f6;
 }
-
+.card:hover{
+    transform:translateY(-8px);
+    transition:.4s;
+    box-shadow:0 15px 40px rgba(96,165,250,.4);
+}
 /* =========================
    프로젝트
 ========================= */
