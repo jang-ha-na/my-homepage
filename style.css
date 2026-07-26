@@ -78,13 +78,13 @@ nav a:hover{
 ========================= */
 
 .hero{
-    min-height:100vh;
+    min-height:70vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    padding-top:100px;
     text-align:center;
+    padding:80px 20px;
 }
 
 .profile{
