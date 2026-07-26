@@ -109,12 +109,10 @@ nav a:hover{
         0 0 20px #4f9cff,
         0 0 40px #2563eb;
 }
-
 .hero h2{
-    font-size:32px;
-    margin:10px 0;
+    font-size:34px;
     color:#ffffff;
-    text-shadow:2px 2px 10px #000;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.8);
 }
 .hero p{
     color:#ffffff;
@@ -400,4 +398,18 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:
+            0 0 8px #4facfe,
+            0 0 16px #4facfe;
+    }
+    to{
+        text-shadow:
+            0 0 15px #4facfe,
+            0 0 30px #60a5fa,
+            0 0 45px #2563eb;
+    }
 }
