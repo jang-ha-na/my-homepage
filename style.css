@@ -110,9 +110,10 @@ nav a:hover{
 }
 
 .hero p{
-    color:#666;
+    color:#ffffff;
     font-size:20px;
     margin-top:10px;
+    text-shadow:2px 2px 8px #000;
 }
 /* =========================
    카드
